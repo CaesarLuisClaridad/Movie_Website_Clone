@@ -1,0 +1,336 @@
+
+
+/*--Form/Sign up page css style--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    color: #fff;
+    background: #000;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 8, 29, 0.7), rgba(0, 8, 29, 0.7)), url(img/background-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav .logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+nav .logolink{
+    background: none;
+}
+
+.header form{
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    background-color: rgba(0,0,0,.75);;
+    position: relative;
+    margin: auto;
+}
+
+.header .signform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 70px 40px;
+}
+
+.signform h1{
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px; 
+}
+
+.signform input{
+   margin-bottom: 20px;
+   padding: 15px;
+   width: 100%;
+}
+
+.signform a{
+    text-align: center;
+    background: #db0001;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 17px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.header .bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bottom a{
+    text-decoration: none;
+    background: none;
+    padding: 0;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.bottom input{
+    width: auto;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.bottom label{
+    display: inline-flex;
+    margin-right: auto;
+    align-items: center;
+}
+
+.bottom-text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 60px
+}
+
+.bottom-text p{
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 13px;
+
+}
+
+.bottom-text a{
+    text-decoration: none;
+    background: none;
+    padding: 0;
+    margin-left: 5px;
+    background-color: transparent;
+}
+
+
+.footer{
+    padding: 50px 10% 10px;
+    color: #777;
+    background-color: rgba(0,0,0,.75);
+}
+
+.footer h5{
+    margin-bottom: 20px;
+}
+
+.footer h5 a{
+    color: #777;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.footer .row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    color: #777;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: transform 0.5s ease;
+}
+
+.footer .col a:hover{
+    transform: translateY(-3px);
+   
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer p{
+    color: #777;
+    font-size: 14px;
+    padding-bottom: 60px;
+}
+
+.footer .language-btn{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 7px 10px;
+    cursor: pointer;
+    margin: auto;
+}
+
+option{
+    color: #000;
+}
+
+@media (max-width: 1030px){
+    .header form{
+        width: 40%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .header .signform{
+        margin-top: 10px;
+        padding: 0px;
+        width: 100%;
+        padding: 20px 40px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 920px){
+    .header {
+        border-bottom: 1px solid #777;
+        height: 90vh;
+        padding: 2% 4%;
+    }
+
+    .header .logo{
+        width: 190px;
+    }
+
+    .header form{
+        width: 70%;
+        height: 70vh;
+        display: flex;
+        background-color: rgba(0,0,0,.75);;
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .header .signform{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 70px 40px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 620px){
+    .header {
+        background-image: none;
+        background-color: #000;
+        border-bottom: 1px solid #777;
+        height: 90vh;
+    }
+
+    .header .logo{
+        width: 180px;
+    }
+
+    .header form{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .header .signform{
+        margin-top: 10px;
+        padding: 0px;
+        width: 100%;
+    }
+
+
+}
+
+@media  (max-width: 420px){
+
+    .header {
+        background-image: none;
+        background-color: #000;
+        border-bottom: 1px solid #777;
+        height: 90vh;
+    }
+
+    nav .logo{
+        width: 80px;
+    }
+
+    .header form{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header .signform{
+        margin-top: 10px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footer .row{
+        display: block;
+    }
+
+} 
+
+@media  (max-width: 300px){
+    .header .logo{
+        width: 80px;
+    }
+    .header form{
+        margin-top: 15px;
+    }
+
+    .signform h1{
+        font-size: 30px;
+    }
+
+    .signform a{
+        font-size: 15px;
+    }
+
+    .bottom-text{
+        margin-top: 30px;
+    }
+}
